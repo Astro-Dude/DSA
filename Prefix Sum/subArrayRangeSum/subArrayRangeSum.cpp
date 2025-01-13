@@ -24,11 +24,16 @@ const bool multipleTestCases = 0;
 
 void solve()
 {
-    int n; cin >> n;
-    vi a(n); cin >> a;
-    it (x, a) cin >> x;
-    
-
+    int n,q; cin >> n >> q;
+    vi arr(n);
+    it(a, arr) cin >> a;
+    vi pre(n);
+    pre[0] = arr[0];
+    for (int i = 1; i < n; i++) pre[i] = pre[i - 1] + arr[i];
+    for (int i = 0; i < q; i++){
+        int l, r; cin >> l >> r;
+        cout << pre[r] - (l ? pre[l - 1] : 0) << endl;
+    }
 }
 
 

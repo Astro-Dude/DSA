@@ -7,10 +7,10 @@ In this section, we will explore different approaches to solve the `SubArrayRang
 ## Approach 1: Brute Force
 
 ### Idea
-For each query, iterate through the subarray from index `l` to `r` and compute the sum. This approach has a time complexity of \(O(q \times (r - l))\), which can be slow for large inputs.
+For each query, iterate through the subarray from index `l` to `r` and compute the sum. This approach has a time complexity of \(O(q(r - l))\), which can be slow for large inputs.
 
 ### Complexity
-- **Time Complexity:** \(O(q \times n)\)
+- **Time Complexity:** \(O(qn)\)
 - **Space Complexity:** \(O(1)\)
 
 ### Code
@@ -84,7 +84,7 @@ for _ in range(q):
 ### Idea
 Use a prefix sum array to store cumulative sums. For any query, the sum of elements from `l` to `r` can be calculated as:
 \[
-\text{sum} = \text{prefix}[r+1] - \text{prefix}[l]
+sum = prefix[r+1] - prefix[l]
 \]
 This reduces the time complexity for each query to \(O(1)\) after preprocessing.
 

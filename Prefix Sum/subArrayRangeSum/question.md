@@ -5,9 +5,8 @@
 You are given an array of integers `arr` of size `n`, and multiple queries, each consisting of two integers `l` and `r`. For each query, your task is to calculate the sum of elements in the subarray from index `l` to `r` (both inclusive). Assume 0-based indexing for the array.
 
 ### Input Format
-- The first line contains an integer `n` — the size of the array.
+- The first line contains two integers `n` and `q` — the size of the array and the number of queries, respectively.
 - The second line contains `n` integers — the elements of the array.
-- The third line contains an integer `q` — the number of queries.
 - The next `q` lines each contain two integers `l` and `r` — the range of indices for which the sum is to be calculated.
 
 ### Output Format
@@ -24,9 +23,8 @@ You are given an array of integers `arr` of size `n`, and multiple queries, each
 ### Example 1
 #### Input
 ```plaintext
-5
+5 3
 1 2 3 4 5
-3
 1 3
 0 4
 2 2
@@ -45,9 +43,8 @@ You are given an array of integers `arr` of size `n`, and multiple queries, each
 ### Example 2
 #### Input
 ```plaintext
-6
+6 2
 -1 2 -3 4 -5 6
-2
 1 4
 0 5
 ```
@@ -63,9 +60,8 @@ You are given an array of integers `arr` of size `n`, and multiple queries, each
 ### Example 3
 #### Input
 ```plaintext
-4
+4 1
 10 20 30 40
-1
 2 3
 ```
 #### Output

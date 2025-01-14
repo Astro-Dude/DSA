@@ -13,10 +13,10 @@ You are given an array of integers `arr` of size `n`, and multiple queries, each
 - For each query, print a single integer — the sum of elements in the subarray from index `l` to `r`.
 
 ### Constraints
-- \( 1 \leq n \leq 10^5 \)
-- \( -10^4 \leq \text{arr[i]} \leq 10^4 \)
-- \( 1 \leq q \leq 10^5 \)
-- \( 0 \leq l \leq r < n \)
+- \( 1 < n < 10^5 \)
+- \( -10^4 < arr[i] < 10^4 \)
+- \( 1 < q < 10^5 \)
+- \( 0 < l < r < n \)
 
 ## Examples
 
